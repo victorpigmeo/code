@@ -31,10 +31,7 @@ def guess():
             training_data.append(np.array(keystroke["waveform"]))
             target_values.append(keystroke["letter"])
 
-        print(waveform)
         recorded_waveform = np.array([waveform]).reshape(1, -1)
-        print(training_data)
-        print(recorded_waveform)
 
         model = SGDClassifier("log_loss")
         model.fit(training_data, target_values)
