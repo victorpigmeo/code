@@ -5,6 +5,7 @@ This is a simple application to guess which key was typed on the keyboard using 
 First you need a microphone and a mongodb running locally (with default username and password: `root`:`example`), if you want to use another database adapt the code to it
 
 With the mongodb up and running execute the `fill_db.py` file
+> Here is advised to create a python venv (`py -m venv env` on Windows or `python3 -m venv env` on Linux & Mac)
 ```
     python3 fill_db.py (Linux & Mac)
     py fill_db.py (Windows)
